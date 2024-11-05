@@ -1,0 +1,179 @@
+@media (min-width: 368px) and (max-width: 769px) {
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: #191B23;
+    }
+    input[type=number]::-webkit-outer-spin-button,
+    input[type=number]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    .roboto {
+        font-family: 'Roboto Slab';
+    }
+    .balsamiq {
+        font-family: 'Balsamiq Sans';
+        color: white;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        margin: 0;
+    }
+    h4 {
+        font-weight: 400;
+    }
+    p {
+        margin: 0
+    }
+    .section {
+        display: none;
+        padding: 0 5%;
+    }
+    .active {
+        display: flex;
+        flex-direction: column;
+    }
+    .inter {
+        font-family: 'Inter';
+        color: white;
+    }
+    .burger-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        width: 40px;
+        height: 30px;
+    }
+    .burger-mobile {
+        position: relative;
+        width: 40px;
+        height: 5px;
+        border-radius: 2px;
+        background-color: white;
+        transition: background-color 0.3s ease;
+    }
+    .burger-mobile::before,
+    .burger-mobile::after {
+        content: "";
+        position: absolute;
+        width: 40px;
+        height: 5px;
+        border-radius: 2px;
+        background-color: white;
+        transition: transform 0.3s ease;
+    }
+    .burger-mobile::before {
+        top: -10px;
+    }
+    .burger-mobile::after {
+        top: 10px;
+    }
+    .burger-container.active .burger-mobile {
+        background-color: transparent; 
+    }
+    .burger-container.active .burger-mobile::before {
+        transform: translateY(10px) rotate(45deg);
+    }
+    .burger-container.active .burger-mobile::after {
+        transform: translateY(-10px) rotate(-45deg);
+    }
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 10%;
+    }
+    .top-header {
+        position: absolute;
+        background-image: url(../img/Vectop-header.png);
+        content: '';
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .top-ellipse {
+        position: absolute;
+        background-image: url(../img/Ellipse1.png);
+        content: '';
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .main {
+        display: none;
+    }
+    .active-main {
+        display: block;
+    }
+    .gradient-border {
+        background: linear-gradient(135deg, #4D329C, #287F75, #2A647E, #194875 );
+        border-radius: 8px;
+        overflow: hidden;
+        padding: 1px;
+    }
+    .main-block {
+        background-color: #262832;
+        padding: 5%;
+        border-radius: inherit;
+    }
+    .img-text-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .main-block-text-img {
+        width: 40%;
+    }
+    .description-container {
+        margin-top: 7.5%;
+        overflow: hidden;
+    }
+    .description {
+        overflow: hidden;
+        max-height: 40px; /* Высота для первых 5 слов (примерно) */
+        transition: max-height 0.3s ease;
+    }
+    .learn-more > a {
+        color: #58CDE7;
+    }
+    #arrow {
+        color: #58CDE7;
+    }
+    .gradient-button {
+        background: linear-gradient(135deg, #4D329C, #287F75, #2A647E, #194875 );
+        border-radius: 8px;
+        padding: 4% 4%;
+        width: 40%;
+    }
+    .button-flex-container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 7.5%;
+    }
+    .white-button {
+        background-color: #FFFFFF;
+        border-radius: 8px;
+        padding: 4% 4%;
+        width: 40%;
+    }
+    .img-text-container-center {
+        justify-content: center;
+    }
+    #welcome-main {
+        margin-top: 5%;
+    }
+    .mainpage-blocks {
+        margin-bottom: 5%;
+    }
+    .footer {
+        background-color: #191B23;
+        padding: 5%;
+    }
+}

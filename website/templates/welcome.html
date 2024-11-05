@@ -1,3 +1,91 @@
 <section class="section active" id="welcome">
-    HELLO
+    <div class="top-header"></div>
+    <div class="top-ellipse"></div>
+    <header class="header">
+        <div class="arrow-back"></div>
+        <h2 class="inter section-name" id="welcome-name"></h2>
+        <div class="burger-container" onclick="toggleMenu()">
+            <div class="burger-mobile"></div>
+        </div>
+    </header>
+    <main class="main active-main" id="welcome-main">
+        <div class="gradient-border mainpage-blocks">
+            <div class="main-block" id="mindjourney-block">
+                <div class="img-text-container main-block-text-img">
+                    <img src="{{ url_for('static', filename='img/Midjourney-icon.png') }}" alt="">
+                    <h3 class="inter">Midjourney</h3>
+                </div>
+                <div class="description-container">
+                    <h4 class="description inter" id="description-midjourney">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt ipsam quas minus laboriosam fugit possimus delectus minima similique praesentium explicabo reiciendis qui, alias dolor nisi blanditiis animi optio iste sint!</h4>
+                    <div class="learn-more inter" onclick="toggleDescription()"><a href="javascript:void(0)">Learn more</a> <span id="arrow">&#x25BC;</span></div>
+                </div>
+                <div class="button-flex-container">
+                    <div class="gradient-button" id="midjourney-upgrade">
+                        <div class="img-text-container img-text-container-center">
+                            <h3 class="inter" style="margin-right: 5%;">Upgrade</h3>
+                            <img src="{{ url_for('static', filename='img/Rhombus.png') }}" alt="">
+                        </div>
+                    </div>
+                    <div class="white-button" id="midjourney-start">
+                        <div class="img-text-container img-text-container-center">
+                            <h3 class="inter" style="margin-right: 5%; color: #000000;">Start a chat</h3>
+                            <img src="{{ url_for('static', filename='img/message-icon.png') }}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="gradient-border mainpage-blocks">
+            <div class="main-block" id="elevenlabs-block">
+                <div class="img-text-container main-block-text-img">
+                    <img src="{{ url_for('static', filename='img/elevenlabs.png') }}" alt="">
+                    <h3 class="inter">ElevenLabs</h3>
+                </div>
+                <div class="description-container">
+                    <h4 class="description inter" id="description-elevenlabs">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt ipsam quas minus laboriosam fugit possimus delectus minima similique praesentium explicabo reiciendis qui, alias dolor nisi blanditiis animi optio iste sint!</h4>
+                    <div class="learn-more inter" onclick="toggleDescription()"><a href="javascript:void(0)">Learn more</a> <span id="arrow">&#x25BC;</span></div>
+                </div>
+                <div class="button-flex-container">
+                    <div class="gradient-button" id="elevenlabs-upgrade">
+                        <div class="img-text-container img-text-container-center">
+                            <h3 class="inter" style="margin-right: 5%;">Upgrade</h3>
+                            <img src="{{ url_for('static', filename='img/Rhombus.png') }}" alt="">
+                        </div>
+                    </div>
+                    <div class="white-button" id="elevenlabs-start">
+                        <div class="img-text-container img-text-container-center">
+                            <h3 class="inter" style="margin-right: 5%; color: #000000;">Start a chat</h3>
+                            <img src="{{ url_for('static', filename='img/message-icon.png') }}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="gradient-border mainpage-blocks">
+            <div class="main-block" id="chatgpt-block">
+                <div class="img-text-container main-block-text-img">
+                    <img src="{{ url_for('static', filename='img/gpt-icon.png') }}" alt="">
+                    <h3 class="inter">Chat GPT</h3>
+                </div>
+                <div class="description-container">
+                    <h4 class="description inter" id="description-chatgpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt ipsam quas minus laboriosam fugit possimus delectus minima similique praesentium explicabo reiciendis qui, alias dolor nisi blanditiis animi optio iste sint!</h4>
+                    <div class="learn-more inter" onclick="toggleDescription()"><a href="javascript:void(0)">Learn more</a> <span id="arrow">&#x25BC;</span></div>
+                </div>
+                <div class="button-flex-container">
+                    <div class="gradient-button" id="chatgpt-upgrade">
+                        <div class="img-text-container img-text-container-center">
+                            <h3 class="inter" style="margin-right: 5%;">Upgrade</h3>
+                            <img src="{{ url_for('static', filename='img/Rhombus.png') }}" alt="">
+                        </div>
+                    </div>
+                    <div class="white-button" id="chatgpt-start">
+                        <div class="img-text-container img-text-container-center">
+                            <h3 class="inter" style="margin-right: 5%; color: #000000;">Start a chat</h3>
+                            <img src="{{ url_for('static', filename='img/message-icon.png') }}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 </section>

@@ -1,4 +1,5 @@
-// РАЗДЕЛЯЙ ВСЁ НА КАК МОЖНО БОЛЬШЕ РАЗНЫХ ФАЙЛОВ, ТИПО ОТДЕЛЬНЫЕ JS ДЛЯ ЧАТОВ, ДЛЯ АНИМАЦИЙ И ВСЕ ТАКОЕ :)
+// В: РАЗДЕЛЯЙ ВСЁ НА КАК МОЖНО БОЛЬШЕ РАЗНЫХ ФАЙЛОВ, ТИПО ОТДЕЛЬНЫЕ JS ДЛЯ ЧАТОВ, ДЛЯ АНИМАЦИЙ И ВСЕ ТАКОЕ :)
+// И: ХОРОШО :)
 
 
 
@@ -32,3 +33,10 @@ function handleNavigation(event) {
     });
     event.currentTarget.classList.add('active');
 }
+
+//burger toggle
+function toggleMenu() {
+    document.querySelector('.burger-container').classList.toggle('active');
+}
+
+//learn more toggle 
