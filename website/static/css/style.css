@@ -83,6 +83,7 @@
         justify-content: space-between;
         align-items: center;
         padding-top: 10%;
+    z-index: 2;
     }
     .top-header {
         position: absolute;
@@ -175,5 +176,35 @@
     .footer {
         background-color: #191B23;
         padding: 5%;
+    }
+    #chat_history {
+        padding: 0;
+    }
+    #chat_history > .header {
+        padding: 10% 5%;
+    }
+    .chat-history-object {
+        background-color: #262832;
+        padding: 8% 6%;
+        position: relative;
+    }
+    .gradient-string {
+        position: absolute;
+        content: '';
+        left: 0;
+        bottom: 0;
+        right: 0;
+        height: 1px;
+        background: linear-gradient(90deg, #4D329C, #287F75, #2A647E, #194875 );
+    }
+    .history-block-text-img {
+        width: 40%;
+    }
+    .h3-15px-right {
+        position: relative;
+        right: 15px;
+    }
+    .nav-hidden {
+        display: none;
     }
 }

@@ -1,0 +1,39 @@
+<section class="section active" id="chat_history">
+    <div class="top-header"></div>
+    <div class="top-ellipse"></div>
+    <header class="header">
+        <img src="{{ url_for('static', filename='img/arrow-left.png') }}" alt="" class="arrow-back">
+        <h2 class="inter section-name" id="welcome-name">History</h2>
+        <div class="burger-container" onclick="toggleMenu()">
+            <div class="burger-mobile"></div>
+        </div>
+    </header>
+    <nav class="chat-history-navigation">
+        <div class="chat-history-object" id="chat-gpt-history-nav">
+            <div class="img-text-container history-block-text-img">
+                <img src="{{ url_for('static', filename='img/gpt-icon.png') }}" alt="">
+                <h3 class="inter h3-15px-right">Chat GPT</h3>
+            </div>
+            <div class="gradient-string"></div>
+        </div>
+        <div class="chat-history-object" id="midjourney-history-nav">
+            <div class="img-text-container history-block-text-img">
+                <img src="{{ url_for('static', filename='img/Midjourney-icon.png') }}" alt="">
+                <h3 class="inter">Midjourney</h3>
+            </div>
+            <div class="gradient-string"></div>
+        </div>
+        <div class="chat-history-object" id="elevenlabs-history-nav">
+            <div class="img-text-container history-block-text-img">
+                <img src="{{ url_for('static', filename='img/elevenlabs.png') }}" alt="">
+                <h3 class="inter">ElevenLabs</h3>
+            </div>
+            <div class="gradient-string"></div>
+        </div>
+    </nav>
+    <main class="main active-main" id="chat-gpt-history">
+
+    </main>
+    <main class="main" id="midjourney-history"></main>
+    <main class="main" id="elevenlabs-history"></main>
+</section>

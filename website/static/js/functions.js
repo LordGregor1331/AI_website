@@ -40,3 +40,29 @@ function toggleMenu() {
 }
 
 //learn more toggle 
+
+//chat history navigation 
+document.addEventListener('DOMContentLoaded', () => {
+    const navItems = document.querySelectorAll('.chat-history-object');
+    const mainSections = document.querySelectorAll('.main');
+    const nav = document.querySelector('.chat-history-navigation');
+    navItems.forEach(item => {
+        item.addEventListener('click', () => {
+            const navId = item.id; 
+            const mainId = navId.replace('-nav', ''); 
+            const targetMain = document.getElementById(mainId);
+            mainSections.forEach(main => {
+                main.classList.remove('active-main');
+            });
+            targetMain.classList.add('active-main');
+            nav.classList.add('nav-hidden');
+        });
+    });
+    const backButton = document.querySelector('.arrow-back');
+    backButton.addEventListener('click', () => {
+        mainSections.forEach(main => {
+            main.classList.remove('active-main');
+        });
+        nav.classList.remove('nav-hidden');
+    });
+});
