@@ -1,3 +1,36 @@
-<section class="section" id="chat">
-    CHAT
+<section class="section active" id="chat">
+    <div class="top-header"></div>
+    <div class="top-ellipse"></div>
+    <header class="header">
+        <img src="{{ url_for('static', filename='img/arrow-left.png') }}" alt="" class="arrow-back">
+        <h2 class="inter section-name" id="welcome-name">Title</h2>
+        <div class="burger-container" onclick="toggleMenu()">
+            <div class="burger-mobile"></div>
+        </div>
+    </header>
+    <nav class="chat-nav">
+        <div class="new-chat inter"></div>
+        <div class="chat-list">
+            <img src="{{ url_for('static', filename='img/arrow-bottom.png') }}" alt=""><h4 class="inter" style="opacity: 0.5; font-weight: 100;"><span id="chat-number" class="inter" style="font-weight: inherit;">4&nbsp;</span>more chats</h4>
+        </div>
+    </nav>
+    <main class="main active-main" id="chat-main">
+        <div class="messages-container">
+            
+        </div>
+        <div class="input-toolbar">
+            <img src="{{ url_for('static', filename='img/chat-settings.png') }}" alt="">
+            <div class="input-container">
+                <img src="{{ url_for('static', filename='img/paperclip.png') }}" alt="">
+                <textarea class="input chat-input" placeholder="Write a message"></textarea>
+                <img src="{{ url_for('static', filename='img/arrow-up-circle.png') }}" alt="" class="send-message">
+            </div>
+        </div>
+        <div class="hello-message">
+            <div class="gpt-big-img">
+                <img src="{{ url_for('static', filename='img/gpt-big-icon.png') }}" alt="">
+            </div>
+            <h3 class="inter">How can i help you?</h3>
+        </div>
+    </main>
 </section>

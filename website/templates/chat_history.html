@@ -1,4 +1,4 @@
-<section class="section active" id="chat_history">
+<section class="section" id="chat_history">
     <div class="top-header"></div>
     <div class="top-ellipse"></div>
     <header class="header">
@@ -8,31 +8,57 @@
             <div class="burger-mobile"></div>
         </div>
     </header>
-    <nav class="chat-history-navigation">
+    <nav class="chat-history-navigation nav-hidden">
         <div class="chat-history-object" id="chat-gpt-history-nav">
             <div class="img-text-container history-block-text-img">
                 <img src="{{ url_for('static', filename='img/gpt-icon.png') }}" alt="">
                 <h3 class="inter h3-15px-right">Chat GPT</h3>
             </div>
-            <div class="gradient-string"></div>
+            <img src="{{ url_for('static', filename='img/startchat.png') }}" alt="">
         </div>
         <div class="chat-history-object" id="midjourney-history-nav">
             <div class="img-text-container history-block-text-img">
                 <img src="{{ url_for('static', filename='img/Midjourney-icon.png') }}" alt="">
                 <h3 class="inter">Midjourney</h3>
             </div>
-            <div class="gradient-string"></div>
+            <img src="{{ url_for('static', filename='img/startchat.png') }}" alt="">
         </div>
         <div class="chat-history-object" id="elevenlabs-history-nav">
             <div class="img-text-container history-block-text-img">
                 <img src="{{ url_for('static', filename='img/elevenlabs.png') }}" alt="">
                 <h3 class="inter">ElevenLabs</h3>
             </div>
-            <div class="gradient-string"></div>
+            <img src="{{ url_for('static', filename='img/startchat.png') }}" alt="">
         </div>
     </nav>
     <main class="main active-main" id="chat-gpt-history">
+        <div class="start-new-chat">
+            <img src="{{ url_for('static', filename='img/message-icon-white.png') }}" alt="">
+            <h4 class="inter">Start a new chat</h4>
+        </div>
+        <div>
+            <h4 class="inter" style="opacity: 0.5; font-weight: 100;" id="chat-date-title">Date</h4>
+            <div class="chat-date two-line-container">
+                <div class="first-line">
+                    <div class="img-text-container chat-title-container">
+                        <img src="{{ url_for('static', filename='img/gpt-icon.png') }}" alt="">
+                        <h3 class="inter conversation-title">Conversation Title</h3>
+                    </div>
+                    <div class="threedots" style="margin-right: 2%;">&#x22EE;</div>
+                    <!-- в джаваскрипт функции delete присваивает чату display none (можно обновить страницу и вернуть чат обратно). Как настроишь нужный функционал по удалению чатов то просто удалишь строчку в функции
+                    (подписан //chat-delete) -->
+                    <div class="threedots-menu" id="threedots-menu">
+                        <div class="threedots-menu-option inter" id="rename-option">Rename</div>
+                        <div class="threedots-menu-option inter" id="delete-option">Delete</div>
+                    </div>
+                </div>
+                <div class="second-line" style="margin-top: 2%;">
+                    <h4 class="inter">Open chat</h4>
+                    <img src="{{ url_for('static', filename='img/star.png') }}" alt="Star Icon" id="star-icon" data-star-url="{{ url_for('static', filename='img/star.png') }}" data-star-gold-url="{{ url_for('static', filename='img/star-gold.png') }}">
+                </div>
+            </div>
 
+        </div>
     </main>
     <main class="main" id="midjourney-history"></main>
     <main class="main" id="elevenlabs-history"></main>
